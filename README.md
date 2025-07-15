@@ -25,10 +25,34 @@
       position: relative;
       z-index: 1;
       background: rgba(255,255,255,0.85);
-      max-width: 60vw;
+      max-width: 90vw; /* Increased from 60vw to 90vw */
       margin: 40px auto;
       padding: 24px;
       border-radius: 24px;
+    }
+    .video-container {
+      position: relative;
+      width: 80vw;   /* Increased width */
+      max-width: 1400px; /* Optional: cap the maximum width */
+      height: 45vw;  /* Maintain 16:9 aspect ratio (80/16*9=45) */
+      max-height: 787px; /* Optional: cap the maximum height */
+      overflow: hidden;
+      margin: 0 auto;
+      border-radius: 18px; /* Optional: rounded corners for style */
+      box-shadow: 0 4px 32px rgba(226,85,162,0.12);
+      background: #fff;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    @media (max-width: 900px) {
+      .content { max-width: 98vw; }
+      .video-container { width: 98vw; height: 55vw; max-width: 98vw; max-height: none;}
     }
   </style>
 </head>
@@ -38,9 +62,9 @@
   <div class="content">
     <h1>ALAABUUUUUUU'💖</h1>
     <p>YOU'RE COMPLETELY MY KIND OF WEIRD AND I'M SO GLAD THAT WE MET!💙</p>
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+    <div class="video-container">
       <iframe src="https://player.vimeo.com/video/1101252754"
-      id="vimeo-player" width="2820" height="1920" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; max-width:100vw;"></iframe>
+      id="vimeo-player" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <script>
@@ -81,7 +105,8 @@
         container.appendChild(heart);
       }
     }
-    addBackgroundHearts(30); // Add 20 static hearts
+    addBackgroundHearts(30); // Add 30 static hearts
+
     // Show custom message and heart animation when video ends
     function showEndMessage() {
       // Create overlay
