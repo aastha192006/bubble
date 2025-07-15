@@ -40,7 +40,7 @@
     <p>YOU'RE COMPLETELY MY KIND OF WEIRD AND I'M SO GLAD THAT WE MET!💙</p>
     <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
       <iframe src="https://player.vimeo.com/video/1101252754"
-      id="vimeo-player" width="2920" height="1920" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; max-width:100vw;"></iframe>
+      id="vimeo-player" width="2820" height="1920" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%; max-width:100vw;"></iframe>
     </div>
   </div>
   <script>
